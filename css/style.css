@@ -33,12 +33,12 @@
     ;
 }
 
-.encabezado {
-   background-color: black;
-   grid-area: header;
-   display: flex;
-   justify-content: space-around;
-   padding: 1rem;
+.bg-propio {
+    background: var(--color-secundario);
+    color: white;
+    width: 100%;
+    top: 0;
+    z-index: 999;
 }
 
 .encabezado-img {
@@ -48,23 +48,9 @@
     margin-top: 1rem;
  }
 
- .navbar {
-    list-style: none;
-    display: flex;
-    text-align: end;
-    gap: 1rem ;
- }
- 
- .navbar li {
-    display: inline-block;
- }
- nav ul li a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: wh;
-    margin-right: 10px;
- }   
-
+.nav-item a:hover {
+    color: red !important; 
+}
 
 
 
@@ -83,12 +69,20 @@
     gap: 2 rem;
 }
 
+.card-title {
+    font-family: 'Courier New', Courier, monospace;
+}
 .card {
     width: 18 rem;
 }
 .card h4 {
     text-align: center;
 }
+.list-group-item {
+    font-size: larger;
+    
+}
+
 .titulo-principal {
    font-size: .8 rem;
    text-align: center;
