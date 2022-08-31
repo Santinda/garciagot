@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+@font-face {
+    font-family: 'got';
+    src: url(../fonts/GameofThrones.ttf);
+}
+
+.pie-de-pagina {
+    background-color: black;
+    grid-area: footer;
+    align-items: center;
+    .p {
+        font-size: .7rem;
+        font-weight: bold;
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 1rem;
+     }
+     
+ }

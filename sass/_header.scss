@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+@font-face {
+    font-family: 'got';
+    src: url(../fonts/GameofThrones.ttf);
+}
+
+
+*{
+    margin:0;
+    padding: 0 ;
+    font-family: 'got', sans-serif;
+ }
+
+.contenedor-index {
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 10vh 70vh 5vh ;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.contedor-contacto {
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 20hv 50hv 30hv;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.bg-propio {
+    background: var(--color-secundario);
+    color: white;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.encabezado-img {
+    width: 15%;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+ }
+
+.nav-item a:hover {
+    color: red !important; 
+}

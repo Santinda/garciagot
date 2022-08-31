@@ -94,4 +94,43 @@
 
 .nav-item a:hover {
   color: red !important;
+}
+
+@media screen and (max-width: 500px) {
+  .encabezado {
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+  .encabezado-img {
+    width: 30%;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .contenedor-cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 18 rem;
+  }
+  .card h4 {
+    text-align: center;
+  }
+  .contenedor-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10fr 5vh;
+    grid-template-areas: "header" "main" "footer";
+  }
 }/*# sourceMappingURL=styles.css.map */
