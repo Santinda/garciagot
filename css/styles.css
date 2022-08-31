@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@font-face {
+  font-family: "got";
+  src: url(../fonts/GameofThrones.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "got", sans-serif;
+}
+
+.contenedor-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 70vh 5vh;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.contedor-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20hv 50hv 30hv;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.bg-propio {
+  background: var(--color-secundario);
+  color: white;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.encabezado-img {
+  width: 15%;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-item a:hover {
+  color: red !important;
+}
+
+.main {
+  grid-area: main;
+  background-color: grey;
+}
+
+.contenedor-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2 rem;
+  gap: 2 rem;
+}
+
+.card-title {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card {
+  width: 18 rem;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.list-group-item {
+  font-size: larger;
+}
+
+.titulo-principal {
+  font-size: 0.8 rem;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pie-de-pagina {
+  background-color: black;
+  grid-area: footer;
+  align-items: center;
+}
+
+.pie-de-pagina p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .encabezado {
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+  .encabezado-img {
+    width: 30%;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .contenedor-cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 18 rem;
+  }
+  .card h4 {
+    text-align: center;
+  }
+  .contenedor-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10fr 5vh;
+    grid-template-areas: "header" "main" "footer";
+  }
+}/*# sourceMappingURL=styles.css.map */
