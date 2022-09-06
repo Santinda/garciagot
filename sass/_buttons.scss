@@ -1,0 +1,3 @@
+.btn-faq {
+    @include btn-faq ($borderColor: Red, $textColor: black, $bgColor white)
+}

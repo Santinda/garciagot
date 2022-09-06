@@ -1,0 +1,9 @@
+@mixin btn-faq($color) {
+    background-color: $bgColor;
+    border-bottom: 03px solid $borderColor;
+    border-radius: 05px;
+    color: $textColor;
+    padding: 10px;
+
+  }
+  
