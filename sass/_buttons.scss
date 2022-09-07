@@ -1,3 +1,7 @@
 .btn-faq {
     @include btn-faq ($borderColor: Red, $textColor: black, $bgColor white)
 }
+
+.btn-faq2 {
+    background-color: map-get($estilos, colorPrimario, borderRadiusUno);
+}
